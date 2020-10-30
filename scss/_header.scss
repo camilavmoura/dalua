@@ -1,0 +1,47 @@
+header {
+    width: 100‰;
+    font-family: sans-serif;
+    padding: 28px 0;
+    margin: 0 30px;
+    border-bottom: 1px;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+
+    nav {
+        font-size: 0;
+        aside {
+            font-size: 16px;
+            font-weight: 300;
+            display: inline-block;
+            width: 100%;
+            vertical-align: middle;
+            ul {
+                li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding: 0 4%;
+                }
+            }
+            &.left {
+                max-width: 70%;
+                li:first-of-type {
+                    background: black;
+                    color: white;
+                    padding: 20px;
+                    margin: 0 20px;
+                }
+            }
+            &.right {
+                text-align: right;
+                max-width: 30%;
+                img {
+                    width: 60px;
+                    padding: 16px;
+                    border: solid 1px gray;
+                }
+            }
+        }
+    }
+
+
+}

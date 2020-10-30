@@ -1,0 +1,32 @@
+.hero-header {
+    text-align: center;
+    padding: 10% 0 0 0;
+    max-height: 70%;
+    h1 {
+        font-size: 84px;
+        font-weight: 300;
+        font-variant: small-caps;
+        padding: 10px;
+    }
+    h2 {
+        padding: 10px 0 20px;
+        font-family: cursive;
+        font-size: 22px;
+        color: gray;
+    }
+    button {
+        margin-top: 40px;
+        padding: 14px 28px;
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: darkgrey;
+        background: white;
+        color: darkgrey;
+        font-variant: small-caps;
+        font-size: 20px;
+        &:hover {
+            color: dodgerblue;
+            border-color: dodgerblue;
+        }
+    }
+}
