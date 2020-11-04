@@ -1,32 +1,57 @@
 .hero-header {
+    display: block;
+    height: 70%;
     text-align: center;
-    padding: 10% 0 0 0;
-    max-height: 70%;
+    padding-top: 10%;
+    .hero-container {
+        margin: auto;
+        display: block;
+        width: 80%;
+    }
     h1 {
-        font-size: 84px;
+        font-size: 88px;
         font-weight: 300;
         font-variant: small-caps;
-        padding: 10px;
+        margin: 40px 0;
+        @include mq(0,375px){
+            margin-top: 60px;
+            text-align: left;
+            font-size: 60px;
+            max-width: 500px;
+        }
     }
     h3 {
-        padding: 10px 0 20px;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 24px;
         font-family: "Courier new", serif;
         font-size: 18px;
         color: gray;
+        @include mq(0,375px){
+            width: 280px;
+            font-size: 16px;
+            text-align: left;
+            margin: 20px 0 40px;
+        }
     }
     button {
-        margin-top: 40px;
+        margin-top: 100px;
         padding: 14px 28px;
         border-bottom-style: solid;
         border-width: 1px;
-        border-color: darkgrey;
+        border-color: $success;
         background: white;
-        color: darkgrey;
+        color: $success;
         font-variant: small-caps;
         font-size: 20px;
         &:hover {
-            color: green;
-            border-color: green;
+            color: white;
+            background: $success;
+            border-color: $success;
+        }
+        @include mq(0,375px){
+            margin-top: 60px;
+            width: 100%;
         }
     }
 }

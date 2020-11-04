@@ -1,14 +1,17 @@
 header {
-    width: 1200px;
-    display: block;
-    margin: 0 auto;
-    padding: 28px 0;
+    width: 100%;
     border-bottom: 1px;
     border-bottom-color: gray;
     border-bottom-style: solid;
 
     nav {
+        width: 90%;
+        display: block;    
+        margin: 0 auto;
         font-size: 0;
+        @include mq(0,800) {
+            width: 100%;
+        }
         aside {
             width: 100%;
             font-size: 16px;
@@ -19,10 +22,7 @@ header {
                 li {
                     display: inline-block;
                     vertical-align: middle;
-                    padding: 0 4%;
-                    :last-of-type {
-                        margin-left: 10px;
-                    }
+                    padding: 0 3%;
                 }
                 :hover {
                     color: green;
@@ -33,8 +33,8 @@ header {
             &.left {
                 max-width: 65%;
                 li:first-of-type {
-                    padding: 20px;
-                    margin: 0 20px;
+                    padding: 0;
+                    transform: scale(0.8);
                 }
             }
             &.right {
@@ -43,7 +43,9 @@ header {
                 img {
                     width: 60px;
                     padding: 16px;
-                    border: solid 1px gray;
+                    border: solid 1px gray;                  :last-of-type {
+                        margin-left: 10px;
+                    }
                 }
                 .login::before {
                     content:"";
