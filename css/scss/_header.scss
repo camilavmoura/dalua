@@ -1,5 +1,5 @@
 header {
-    width: 100‰;
+    width: 1200px;
     font-family: sans-serif;
     padding: 28px 0;
     margin: 0 30px;
@@ -20,6 +20,10 @@ header {
                     display: inline-block;
                     vertical-align: middle;
                     padding: 0 4%;
+                }
+                :hover {
+                    color: green;
+                    font-weight: 500;
                 }
             }
             &.left {
