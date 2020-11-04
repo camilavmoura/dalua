@@ -1,14 +1,14 @@
 .subscription {
-    margin: 200px auto 40px;
+    margin: 140px auto 40px;
     width: 80%;
     text-align: center;
     h2 {
         font-variant: small-caps;
-        font-size: 56px;
+        font-size: 48px;
     }
     h3 {
-        font-family: cursive;
-        font-size: 24px;
+        font-family: "courier new", serif;
+        font-size: 16px;
         color: $darkest-gray;
         margin: 20px auto 60px;
     }
@@ -17,6 +17,7 @@
         border: none;
         .email {
             padding: 16px 240px 16px 12px;
+            font-size: 14px;
             border-width: 0.5px;
             border-color: $darkest-gray;
         }
@@ -25,6 +26,7 @@
             border: none;
             color: white;
             text-align: center;
+            font-size: 14px;
             padding: 17px 28px;
         }
     }

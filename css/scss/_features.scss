@@ -28,19 +28,19 @@
             h2 {
                 font-variant: small-caps;
                 font-weight: 500;
-                font-size: 40px;
+                font-size: 36px;
                 margin-bottom: 4px;
             }
             label {
-                font-family: cursive;
+                font-family: "courier new", serif;
                 font-variant: small-caps;
                 font-size: 28px;
             }
             p {
-                font-family: cursive;
+                font-family: "courier new", serif;
                 font-size: 16px;
-                line-height: 24px;
-                margin: 0 28px 16px 28px;
+                line-height: 20px;
+                margin: 0 20px 16px 20px;
                 &:nth-of-type(2) {
                     font-family: sans-serif;
                     font-size: 14px;
@@ -49,13 +49,19 @@
             }
             .twitter::before {
                 content:"";
-                background-image: url(../css/img/twitter.png);
+                background-image: url(../img/icons/twitter.png);
                 background-repeat: no-repeat;
                 background-size: 28px 28px;
                 margin: 0 auto;
                 display: block;
                 width: 40px; 
                 height: 40px;
+                
+                /*
+                
+                Dá para fazer ::before nested dentro de outro ::before? como se fazem as linhas, visto que o icon de twitter já é um before?
+                
+                */
             }
         }
     }

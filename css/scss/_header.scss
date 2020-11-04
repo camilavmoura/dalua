@@ -1,8 +1,8 @@
 header {
     width: 1200px;
-    font-family: sans-serif;
+    display: block;
+    margin: 0 auto;
     padding: 28px 0;
-    margin: 0 30px;
     border-bottom: 1px;
     border-bottom-color: gray;
     border-bottom-style: solid;
@@ -10,42 +10,64 @@ header {
     nav {
         font-size: 0;
         aside {
+            width: 100%;
             font-size: 16px;
             font-weight: 300;
             display: inline-block;
-            width: 100%;
             vertical-align: middle;
             ul {
                 li {
                     display: inline-block;
                     vertical-align: middle;
                     padding: 0 4%;
+                    :last-of-type {
+                        margin-left: 10px;
+                    }
                 }
                 :hover {
                     color: green;
                     font-weight: 500;
+                    font-size: 17px;
                 }
             }
             &.left {
-                max-width: 70%;
+                max-width: 65%;
                 li:first-of-type {
-                    background: black;
-                    color: white;
                     padding: 20px;
                     margin: 0 20px;
                 }
             }
             &.right {
                 text-align: right;
-                max-width: 30%;
+                max-width: 35%;
                 img {
                     width: 60px;
                     padding: 16px;
                     border: solid 1px gray;
                 }
+                .login::before {
+                    content:"";
+                    background-image: url(../img/icons/user.png);
+                    background-repeat: no-repeat;
+                    background-size: 18px 18px;
+                    background-position: left;
+                    display: inline-block;
+                    width: 18px; 
+                    height: 18px;   
+                    margin: 0 8px;
+                }
+
+                .basket::before {
+                    content:"";
+                    background-image: url(../img/icons/basket.png);
+                    background-repeat: no-repeat;
+                    background-size: 20px 24px;
+                    display: inline-block;
+                    width: 20px; 
+                    height: 20px;   
+                    margin: 0 8px;
+                }
             }
         }
     }
-
-
 }
