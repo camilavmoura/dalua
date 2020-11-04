@@ -1,0 +1,31 @@
+.subscription {
+    margin: 200px auto 40px;
+    width: 80%;
+    text-align: center;
+    h2 {
+        font-variant: small-caps;
+        font-size: 56px;
+    }
+    h3 {
+        font-family: cursive;
+        font-size: 24px;
+        color: $darkest-gray;
+        margin: 20px auto 60px;
+    }
+    form {
+        font-size: 0;
+        border: none;
+        .email {
+            padding: 16px 240px 16px 12px;
+            border-width: 0.5px;
+            border-color: $darkest-gray;
+        }
+        .button {
+            background-color: darkorange;
+            border: none;
+            color: white;
+            text-align: center;
+            padding: 17px 28px;
+        }
+    }
+}
