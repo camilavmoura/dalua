@@ -20,6 +20,9 @@
             font-size: 14px;
             border-width: 0.5px;
             border-color: $darkest-gray;
+            @include mq (0,800px) {
+                padding-right: 80px;
+            }
         }
         .button {
             background-color: darkorange;
@@ -28,6 +31,9 @@
             text-align: center;
             font-size: 14px;
             padding: 17px 28px;
+            @include mq (0,800px) {
+                padding: 17px 18px;
+            }
         }
     }
 }

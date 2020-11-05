@@ -1,5 +1,5 @@
 footer {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto 40px;
     font-size: 0;
     .col {
@@ -8,6 +8,9 @@ footer {
         vertical-align: top;
         font-size: 16px;
         padding: 20px;
+        @include mq(0,800px) {
+            width: 50%;
+        }
         h3 {
             font-variant: small-caps;
             font-size: 20px;
@@ -31,9 +34,11 @@ footer {
         .social-media {
             li {
                 display: inline-block;
-                width: 40px;
-                height: 40px;
                 margin: 20px 10px 20px 0;
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
             }
         }
     }

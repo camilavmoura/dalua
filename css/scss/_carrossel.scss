@@ -1,14 +1,32 @@
 .carrossel {
-    width: 1200px;
-    height: 140px;
+    max-width: 1400px;
+    height: 180px;
     margin: 140px auto 40px;
-    background-color: $dark-gray;
+    position: relative;
+    .arrows {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            img {
+                width: 40px;
+                height: 40px;
+            }
+            :nth-child(2) {
+                float: right;
+            }
+        }
+    .carrossel-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 0;
+        li {
+            display: inline-block;
+            img {
+                background: white;
+                height: 180px;
+                width: 200px;
+            }
+        }
+    }
 }
-
-/* 
-
-Na dúvida quanto à criação geral semântica do carrossel: são apenas uma ul de imagens dentro dos li posto em inline block?
-
-As setas laterais, como se põem?
-
-*/

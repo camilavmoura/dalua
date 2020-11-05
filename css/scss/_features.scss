@@ -1,26 +1,46 @@
 .grid {
-    width: 1200px;
+    max-width: 1200px;
     height: 900px;
     margin: 0 auto;
     font-size: 0;
-    .col {
+    @include mq(0,800px) {
+        width: 100%;
+        height: 3000px;
+    }
+    [class*="col"] {
         display: inline-block;
         vertical-align: top;
         width: 25%;
         font-size: 14px;
-        .square {
+        @include mq(0,800px) {
+            width: 100%;
+        }
+        [class*="square"] {
             width: 300px;
             height: 300px;
             background: $primary;
             :nth-of-type(3) {
                 background: $primary-d2;
             }
+            @include mq(0,800px) {
+                width: 100%;
+            }
         }
-        .rectangle {
+        [class*="rectangle"] {
             width: 300px;
             height: 600px;
             background: $primary-l1;
+            @include mq(0,800px) {
+                width: 100%;
+                height: 300px;
+            }
         }
+        [class*="5"],[class*="7"] {
+            background: $primary-d1;
+        }  
+        [class*="3"],[class*="8"] {
+            background: $primary-l2;
+        }        
         .feature-content {
             position: relative;
             top: 50%;
