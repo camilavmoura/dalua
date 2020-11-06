@@ -1,50 +1,123 @@
 header {
+    z-index: 1;
     width: 100%;
+    height: 200px;
     border-bottom: 1px;
     border-bottom-color: gray;
     border-bottom-style: solid;
-
+    position: fixed;
+    top: 0;
+    background: white;
+    opacity: 90%;
+    @include mq(0,1024px) {
+        height: 160px;
+    }
     nav {
-        width: 90%;
-        display: block;    
+        width: 100%;
+        display: inline-block;    
         margin: 0 auto;
         font-size: 0;
         @include mq(0,800) {
             width: 100%;
         }
+        .logo {  
+            max-width: 15%;
+            transform: translateX(-3%);
+            display: inline-block;
+            vertical-align: middle;
+            img {
+                padding: 0;
+                transform: scale(0.8);
+                @include mq(0,1024px) {
+                    transform: scale(0.6) translateY(-32px) translateX(-20px);
+                }
+            }
+        }
         aside {
-            width: 100%;
-            font-size: 16px;
+            width: 80%;
+            font-size: 18px;
             font-weight: 300;
             display: inline-block;
             vertical-align: middle;
-            ul {
+            @include mq(0,1024px) {
+                font-size: 14px;
+            }
+            ul {                    
+                @include mq(0,1024px) {
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
                 li {
                     display: inline-block;
                     vertical-align: middle;
                     padding: 0 3%;
+                    @include mq(0,1024px) {
+                        position: relative;
+                        top: 20px;
+                    }
                 }
-                :hover {
+                a:hover {
                     color: green;
                     font-weight: 500;
-                    font-size: 17px;
+                    font-size: 19px;
                 }
             }
             &.left {
-                max-width: 65%;
-                li:first-of-type {
-                    padding: 0;
-                    transform: scale(0.8);
+                max-width: 45%;
+                @include mq(0,1024px) {
+                    ul {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    max-width: 100%;
+                    width: 100%;
+                    background: white;
+                    height: 140px;
+                    li {
+                        transform: translateY(-20px);
+                    }
+                    li::before {
+                        display: block;
+                        text-align: center;
+                        width: 100%;
+                        padding: 8px 0;
+                    }
+                    li:nth-child(1)::before {
+                        content:  url(../img/icons/lua1.png);
+                    }
+                    li:nth-child(2)::before {
+                        content: url(../img/icons/lua2.png);
+                    }
+                    li:nth-child(3)::before {
+                        content: url(../img/icons/lua3.png);
+                    }
+                    li:nth-child(4)::before {
+                        content: url(../img/icons/lua4.png);
+                    }
+                    
                 }
             }
             &.right {
                 text-align: right;
-                max-width: 35%;
+                max-width: 40%;
+                right: 30px;
+                @include mq(0,1024px) {
+                    position: absolute;
+                    max-width: 60%;
+                    top: 40%;
+                    right: 60px;
+                }
                 img {
                     width: 60px;
                     padding: 16px;
-                    border: solid 1px gray;                  :last-of-type {
-                        margin-left: 10px;
+                    border: solid 1px gray;      
+                    :last-of-type {
+                        margin: 0 20px;
                     }
                 }
                 .login::before {
@@ -58,7 +131,6 @@ header {
                     height: 18px;   
                     margin: 0 8px;
                 }
-
                 .basket::before {
                     content:"";
                     background-image: url(../img/icons/basket.png);

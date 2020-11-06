@@ -1,0 +1,23 @@
+.categories {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    margin: 300px auto 0;
+    display: block;
+    h1 {
+        font-variant: small-caps;
+        font-size: 60px;
+        padding: 20px 0;
+    }
+    button {
+        font-family: "Courier new", serif;
+        border: none;
+        background: none;
+        font-size: 20px;
+        ::after {
+            content: url(../img/icons/arrow-right.png);
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
