@@ -1,23 +1,71 @@
+section:first-of-type {
+    margin-top: 300px;
+}
+
 .categories {
-    width: 100%;
-    height: 500px;
+    color: $black;
+    width: 100vw;
+    height: 60vh;
     text-align: center;
-    margin: 300px auto 0;
+    margin:  auto;
     display: block;
     h1 {
         font-variant: small-caps;
         font-size: 60px;
         padding: 20px 0;
     }
-    button {
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 20px;
+    }
+    h3 {
+        font-size: 16px;
+        color: $darkest-gray;
+    }
+    label {
         font-family: "Courier new", serif;
         border: none;
         background: none;
         font-size: 20px;
-        ::after {
-            content: url(../img/icons/arrow-right.png);
-            width: 28px;
-            height: 28px;
+    }
+    ul {
+        margin: 40px auto;
+        height: 240px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        li {
+            height: 100%;
+            img {
+                height: 300px;
+                width: 240px;
+                background: white;
+            }
         }
     }
+        /*  
+        
+        pqq não dá isto no label?
+        ::after {
+            content:"";
+            background-image: url(../img/icons/right-arrow.png);
+            background-repeat: no-repeat;
+            background-size: 28px 28px;
+            margin: 0 auto;
+            display: block;
+            width: 28px; 
+            height: 28px;
+        }
+        ::after {
+            content: url(../img/icons/right-arrow.png);
+            width: 28px;
+            height: 28o
+        }
+        
+        */
 }
+
+
+
+

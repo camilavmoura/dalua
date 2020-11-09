@@ -89,3 +89,26 @@
         }
     }
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 32px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-row: 1 / 3;
+}
+
+.item10 {
+grid-row: 2/4;
+grid-column: 4/5;
+}
