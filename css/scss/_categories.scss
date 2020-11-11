@@ -37,9 +37,10 @@ section:first-of-type {
         justify-content: space-around;
         li {
             height: 100%;
+            height: 300px;
+            width: 360px;
             img {
-                height: 300px;
-                width: 240px;
+                width: 360px;
                 background: white;
             }
         }
