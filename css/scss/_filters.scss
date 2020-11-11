@@ -1,0 +1,28 @@
+.filters {
+    margin: 40px auto 0;
+    max-width: 800px;
+    .filters-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        @include mq(0,800px) {
+            grid-template-columns: auto;
+            :first-child {
+                margin-top: 40px;
+            }
+        }
+        select {
+            color: $darkest-gray;
+            font-size: 16px;
+            width: 320px;
+            margin: 28px auto 60px;
+            padding: 16px;
+            padding-right: 200px;
+            border: solid 0.5px $darkest-gray;
+            border-left: none;
+            border-right: none;
+            @include mq(0,800px) {
+                margin: 10px auto;
+            }
+        }
+    }
+}

@@ -40,7 +40,8 @@ header {
             display: inline-block;
             vertical-align: middle;
             @include mq(0,1024px) {
-                font-size: 14px;
+                font-size: 16px;
+                font-weight: 500;
             }
             ul {                    
                 @include mq(0,1024px) {
@@ -50,7 +51,6 @@ header {
                     transform: translateY(-50%);
                 }
                 li {
-                    color: $darkest-gray;
                     display: inline-block;
                     vertical-align: middle;
                     padding: 0 3%;
@@ -59,9 +59,12 @@ header {
                         top: 20px;
                     }
                 }
+                a {
+                    color: $darkest-gray;
+                }
                 a:hover {
                     color: green;
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: 19px;
                 }
             }

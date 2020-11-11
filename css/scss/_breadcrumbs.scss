@@ -1,0 +1,26 @@
+.breadcrumbs {
+    position: fixed;
+    z-index: 1;
+    top: 240px;
+    left: 60px;
+    @include mq(0,1024px) {
+        margin-bottom: 20px;
+    }
+    ul {
+        font-size: 16px;
+        li {
+            display: inline-block;
+            a {
+                color: $darkest-gray; 
+            }
+            :hover {
+                color: $success-d1;
+            }
+        }
+        li+li:before {
+            padding: 8px;
+            color: $darkest-gray; 
+            content: "/\00a0";
+        }
+    }
+}

@@ -86,7 +86,7 @@
                         <a class="login">Log In</a>
                     </li>
                     <li>
-                        <a class="basket">Basket</a>
+                        <a class="basket">Basket (1)</a>
                     </li>
                     <li>
                         <a class="search">
@@ -101,22 +101,55 @@
 
     </header>
     
+    <div class="basket-full">
+    
+        <div class="basket-container">
+        
+            <div class="item-container">
+            
+                <img src="#">
+                <h3>immunity boost</h3>
+                <p>8,00€</p>
+                <img src="img/icons/close.svg">
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
     <section class="breadcrumbs">
     
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Products</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Tinctures</a></li>
         </ul>
         
     </section>
       
-    <section class="products">
+    <section class="category">
        
         <h1>tinctures</h1>
-        <label><a href="tinctures.html">show more</a></label>
+        <p>All products</p>
+            
+        <form class="filters">
+            <div class="filters-container">
+                <select name="Price" value="Price">
+                    <option value="8,00€">8,00€</option>
+                    <option value="10,00€">10,00€</option>
+                    <option value="15,00€">15,00€</option>
+                </select>
+                <select name="Quantity" value="Quantity">
+                    <option value="30ml">30ml</option>
+                    <option value="50ml">50ml</option>
+                    <option value="100ml">100ml</option>
+                </select>
+            </div>
+        </form>
         
-        <div class="products-grid">
-        
+        <div class="category-grid">
+
                 <div class="item1">
                     <a>
                         <img src="img/products/tincture1.png">
@@ -144,129 +177,10 @@
                         <h2>Womb Love</h2>
                         <h3>8,00€</h3>
                     </a>
-                </div>                   
-            
-        </div>    
-            
-    </section>
-
-    <section class="products">
-       
-        <h1>balms & oils</h1>
-        <label>show more</label>
-        
-        <div class="products-grid-2">    
-
-                <div class="item1">
-                    <a>
-                        <img src="img/products/balm1.png">
-                        <h2>Magic Balm</h2>
-                        <h3>5,00€</h3>
-                    </a>    
-                </div>            
-
-                <div class="item2">
-                    <a>
-                        <img src="img/products/oil1.png">
-                        <h2>Massage Oil</h2>
-                        <h3>5,00€</h3>
-                    </a>
-                </div>            
-                <div class="item3">
-                    <a>
-                        <img src="img/products/balm2.png">
-                        <h2>Yoni Balm</h2>
-                        <h3>5,00€</h3>
-                    </a>
                 </div>                       
-
+            
         </div>    
             
     </section>
     
-    <section class="products">
-       
-        <h1>smoking blends</h1>
-        <label>show more</label>
-        
-        <div class="products-grid-3">
-
-                <div class="item1">
-                    <a>
-                        <img src="img/products/blend1.png">
-                        <h2>Basic Smoking Blend</h2>
-                        <h3>10,00€</h3>
-                    </a>    
-                </div>            
-                <div class="item2">
-                    <a>
-                        <img src="img/products/cbd1.png">
-                        <h2>CBD Smoking Blend</h2>
-                        <h3>12,50€</h3>
-                    </a>
-                </div>            
-
-        </div>    
-            
-    </section>    
-    
-    <footer>
-    
-        <div class="col">
-            
-            <h3>collection</h3>
-            <ul>
-                <li>Tinctures</li>
-                <li>Oils & Balms</li>
-                <li>Smoking Blends</li>
-                <li>CBD Smoking Blends</li>
-            </ul>
-                
-        </div>        
-        
-        <div class="col">
-        
-            <h3>site</h3>
-            <ul>
-                <li>Terms of Service</li>
-                <li>Privacy Policy</li>
-                <li>Copyright Policy</li>
-                <li>Support</li>
-            </ul>
-            
-        </div>        
-        
-        <div class="col">
-        
-            <h3>shop</h3>
-            <ul>
-                <li>About us</li>
-                <li>Shipping Methods</li>
-                <li>Contact</li> 
-            </ul>
-        
-        </div>        
-        
-        <div class="col">
-        
-            <h3>social</h3>
-            <p>Products are made with love and organically in Portugal, 2020 © All rights reserved. Da Lua</p>
-            <ul class="social-media">
-                <li>
-                    <img src="img/icons/twitter-dark.png">
-                </li>
-                <li>
-                    <img src="img/icons/facebook.png">
-                </li>   
-                <li>
-                    <img src="img/icons/instagram.png">
-                </li>                
-            </ul>
-        
-        </div>
-    
-    </footer>
-    
-</body>
-
-</html>
+</body>    

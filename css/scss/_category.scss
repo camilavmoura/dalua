@@ -1,0 +1,31 @@
+.category {
+    text-align: center;
+    h1 {
+        background-color: white;
+        font-variant: small-caps;
+        font-size: 60px;
+        padding: 20px 0 20px;
+        @include mq(0,800px) {
+            text-align: left;
+            padding-left: 60px;
+        }
+    }
+    p {
+        font-family: "courier new", serif;
+        font-size: 20px;
+        color: $dark-gray;
+        @include mq(0,800px) {
+            text-align: left;
+            padding-left: 60px;
+        }        
+    }
+    .category-grid {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 100px 0;
+        @include mq(0,800px) {
+            grid-template-columns: auto;
+        }
+    }
+}

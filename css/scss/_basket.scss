@@ -1,0 +1,36 @@
+.basket-full {
+    position: absolute;
+    top: -100px;
+    right: 60px;
+    width: 500px;
+    border: solid 0.5px $dark-gray;
+    .basket-container {
+        .item-container {
+            display: inline-block;
+            max-width: 100%;
+            width: 100%;
+            line-height: 80px;
+            padding-left: 24px;
+            h3 {
+                font-variant: small-caps;
+                font-size: 20px;
+                width: 50%;
+                display: inline-block;
+            }
+            p { 
+                color: $dark-gray;
+                width: 20%; 
+                display: inline-block;
+            }
+            img {
+                display: inline-block;
+                &:first-of-type {
+                    width: 60px;
+                }
+                &:last-of-type {
+                    width: 16px;
+                }
+            }
+        }
+    }
+}
