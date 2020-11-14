@@ -1,36 +1,86 @@
 .basket-full {
+    font-size: 0;
+    z-index: 2;
+    background: white;
     position: absolute;
-    top: -100px;
+    top: -140px;
     right: 60px;
-    width: 500px;
-    border: solid 0.5px $dark-gray;
+    max-width: 460px;
+    border: solid 0.5px $light-gray;
+    @include mq(0,1024px) {
+        top: -180px;
+    }
     .basket-container {
+        position: relative;
+        margin: 20px;
+        margin-bottom: 0;
         .item-container {
+            font-size: 16px;
+            border-bottom: solid 0.5px $light-gray;
             display: inline-block;
             max-width: 100%;
             width: 100%;
             line-height: 80px;
             padding-left: 24px;
+            &:first-of-type {
+                border-top: solid 0.5px $light-gray;
+            }
             h3 {
+                color: $darkest-gray;
                 font-variant: small-caps;
+                font-weight: 600;
                 font-size: 20px;
-                width: 50%;
+                width: 55%;
                 display: inline-block;
+                padding: 0 20px;
             }
             p { 
                 color: $dark-gray;
                 width: 20%; 
                 display: inline-block;
             }
-            img {
+            .basket-img-container {
+                border: solid 0.5px $light-gray;
                 display: inline-block;
-                &:first-of-type {
-                    width: 60px;
-                }
-                &:last-of-type {
+                width: 15%;
+                background-image: url(../img/products/tincture1.png);
+                background-size: cover;
+                background-position: center;
+                /*
+                    Não estou a conseguir que a imagem fique centrada verticalmente, nem com background image nem no html (já agora, qual deles é melhor?)
+                */
+            }
+            .close {
+                display: inline-block;
+                width: 16px;
+                img {
                     width: 16px;
                 }
             }
         }
+    }
+    label {
+        color: $warning-d1;
+        font-size: 16px;
+        line-height: 80px;
+        display: inline-block;
+        width: 60%;
+        font-weight: bold;
+        ::before {
+            content: "Subtotal";
+            font-size: 16px;
+            font-weight: bold;
+            color: $darkest-gray;
+        }
+    }
+    button {
+        border: none;
+        background: $info-l3;
+        display: inline-block;
+        width: 40%;
+        font-variant: small-caps;
+        font-size: 22px;
+        color: white;
+        padding: 8px;
     }
 }
