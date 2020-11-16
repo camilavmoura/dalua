@@ -70,12 +70,12 @@
                 
             <aside class="left">
 
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="#">Sessions</a></li>
-                    <li><a href="#">Coming Soon</a></li>
-                </ul>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">Sessions</a></li>
+                <li><a href="#">Coming Soon</a></li>
+            </ul>
 
             </aside>
 
@@ -86,7 +86,7 @@
                         <a class="login">Log In</a>
                     </li>
                     <li>
-                        <a class="basket">Basket (2)</a>
+                        <a class="basket">Basket</a>
                     </li>
                     <li>
                         <a class="search">
@@ -101,100 +101,101 @@
 
     </header>
     
-    <div class="basket-full">
-    
-        <div class="basket-container">
+    <section class="shopping-bag">
         
-            <div class="item-container">
-                
-                <div class="basket-img-container">
-                </div>    
-                <h3>immunity boost</h3>
+        <h1>your shopping bag</h1>
+        <p>Items reserved for limited time only</p>
+    
+        <div class="shopping-bag-grid">
+        
+            <div class="shopping-bag-grid-container">
+            
+                <label>product</label>
+                <label>description</label>
+                <label>quantity</label>
+                <label>price</label>
+                <label>delete</label>
+                <img src="#">
+                <div class="description">
+                    <h3>immunity boost</h3>
+                    <p>Ref. 2415</p>
+                </div>
+                <p>30ml</p>
                 <p>8,00€</p>
                 <img class="close" src="img/icons/close.svg">
-                
-            </div>           
-            
-            <div class="item-container">
-                
-                <div class="basket-img-container">
-                </div>    
+                <div class="description">
                 <h3>womb love</h3>
+                <p>Ref. 2122</p>
+                </div>
+                <p>50ml</p>
                 <p>10,00€</p>
                 <img class="close" src="img/icons/close.svg">
-                
+            
             </div>
-            
-            <label>18,00€</label>
-            <a href="shopping_bag.html"><button>checkout</button></a>
-            
+        
         </div>
         
-    </div>
-    
-    <section class="breadcrumbs">
-    
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="#">Tinctures</a></li>
-        </ul>
-        
     </section>
-      
-    <section class="category">
-       
-        <h1>tinctures</h1>
-        <p>All products</p>
-            
-        <form class="filters">
-            <div class="filters-container">
-                <select name="Price" value="Price">
-                    <option value="8,00€">8,00€</option>
-                    <option value="10,00€">10,00€</option>
-                    <option value="15,00€">15,00€</option>
-                </select>
-                <select name="Quantity" value="Quantity">
-                    <option value="30ml">30ml</option>
-                    <option value="50ml">50ml</option>
-                    <option value="100ml">100ml</option>
-                </select>
-            </div>
-        </form>
+    
+    
         
-        <div class="category-grid">
+    <footer>
+    
+        <div class="col">
+            
+            <h3>collection</h3>
+            <ul>
+                <li>Tinctures</li>       
+                <li>Oils & Balms</li>
+                <li>Smoking Blends</li>
+                <li>CBD Smoking Blends</li>
+            </ul>
+                
+        </div>        
+        
+        <div class="col">
+        
+            <h3>site</h3>
+            <ul>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Copyright Policy</li>
+                <li>Support</li>
+            </ul>
+            
+        </div>        
+        
+        <div class="col">
+    
+            <h3>shop</h3>
+            <ul>
+                <li>About us</li>
+                <li>Shipping Methods</li>
+                <li>Contact</li> 
+            </ul>
+    
+        </div>        
+        
+        <div class="col">
+    
+            <h3>social</h3>
+            <p>Products are made with love and organically in Portugal, 2020 © All rights reserved. Da Lua</p>
+            <ul class="social-media">
+                <li>
+                    <img src="img/icons/twitter-dark.png">
+                </li>
+                <li>
+                    <img src="img/icons/facebook.png">
+                </li>   
+                <li>
+                    <img src="img/icons/instagram.png">
+                </li>                
+            </ul>
+        
+        </div>
+    
+    </footer>
+    
+</body>
 
-                <div class="item1">
-                    <a>
-                        <img src="img/products/tincture1.png">
-                        <h2>Immunity Boost</h2>
-                        <h3>8,00€</h3>
-                    </a>    
-                </div>            
-                <div class="item2">
-                    <a>
-                        <img src="img/products/tincture2.png">
-                        <h2>Moon</h2>
-                        <h3>8,00€</h3>
-                    </a>
-                </div>            
-                <div class="item3">
-                    <a>
-                        <img src="img/products/tincture3.png">
-                        <h2>Relax</h2>
-                        <h3>8,00€</h3>
-                    </a>
-                </div>            
-                <div class="item4">
-                    <a>
-                        <img src="img/products/tincture4.png">
-                        <h2>Womb Love</h2>
-                        <h3>8,00€</h3>
-                    </a>
-                </div>                       
-            
-        </div>    
-            
-    </section>
-    
-</body>    
+</html>

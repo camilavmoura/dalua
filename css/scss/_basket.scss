@@ -82,5 +82,8 @@
         font-size: 22px;
         color: white;
         padding: 8px;
+        &:hover {
+            background: $info-l4;
+        }
     }
 }
