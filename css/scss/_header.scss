@@ -1,35 +1,30 @@
 header {
     z-index: 1;
     width: 100%;
-    height: 200px;
+    height: 140px;
     border-bottom: 1px;
-    border-bottom-color: gray;
-    border-bottom-style: solid;
     position: fixed;
     top: 0;
     background: white;
     opacity: 90%;
     @include mq(0,1024px) {
-        height: 160px;
+        height: 100px;
     }
     nav {
         width: 100%;
         display: inline-block;    
         margin: 0 auto;
         font-size: 0;
-        @include mq(0,800) {
-            width: 100%;
-        }
         .logo {  
-            max-width: 15%;
+            max-width: 10%;
             transform: translateX(-3%);
             display: inline-block;
             vertical-align: middle;
             img {
                 padding: 0;
-                transform: scale(0.8);
+                transform: scale(0.6) translateY(-44px) translateX(-40px);
                 @include mq(0,1024px) {
-                    transform: scale(0.6) translateY(-32px) translateX(-20px);
+                    transform: scale(0.4) translateY(-120px) translateX(-100px);
                 }
             }
         }
@@ -43,7 +38,8 @@ header {
                 font-size: 16px;
                 font-weight: 500;
             }
-            ul {                    
+            ul {
+                transform: translateY(-20px);        
                 @include mq(0,1024px) {
                     position: absolute;
                     width: 100%;
@@ -53,6 +49,7 @@ header {
                 li {
                     display: inline-block;
                     vertical-align: middle;
+                    transform: translateY(-50%);
                     padding: 0 3%;
                     @include mq(0,1024px) {
                         position: relative;
@@ -69,19 +66,22 @@ header {
                 }
             }
             &.left {
+                padding-left: 40px;
                 max-width: 45%;
                 @include mq(0,1024px) {
+                    padding-left: 0;
                     ul {
                         display: flex;
                         justify-content: space-around;
                     }
+                    font-size: 14px;
                     position: fixed;
                     bottom: 0;
                     left: 0;
                     max-width: 100%;
                     width: 100%;
                     background: white;
-                    height: 140px;
+                    height: 100px;
                     li {
                         transform: translateY(-20px);
                     }
@@ -89,7 +89,7 @@ header {
                         display: block;
                         text-align: center;
                         width: 100%;
-                        padding: 8px 0;
+                        padding: 4px 0;
                     }
                     li:nth-child(1)::before {
                         content:  url(../img/icons/lua1.png);
@@ -114,15 +114,16 @@ header {
                     position: absolute;
                     max-width: 60%;
                     top: 40%;
-                    right: 60px;
+                    right: 20px;
+                }
+                li:last-of-type {
+                    transform: translateY(-10px);
                 }
                 img {
-                    width: 60px;
-                    padding: 16px;
+                    width: 44px;
+                    padding: 10px;
+                    top: 20px;
                     border: solid 1px gray;      
-                    :last-of-type {
-                        margin: 0 20px;
-                    }
                 }
                 .login::before {
                     content:"";

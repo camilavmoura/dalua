@@ -1,9 +1,16 @@
 .hero-header {
     display: block;
-    height: 66%;
+    height: 56%;
     text-align: center;
-    padding-top: 10%;
-    margin-top: 200px;
+    padding-top: 160px;
+    margin-top: 60px;
+    @include mq(0,1024px){
+        padding-top: 200px;
+        margin-top: 0px;
+    }
+    @include mq(0,375px){
+        padding-top: 100px;
+    }
     .hero-container {
         margin: auto;
         display: block;
@@ -14,9 +21,12 @@
         font-weight: 300;
         font-variant: small-caps;
         margin: 40px 0;
+        @include mq(0,1024px){
+            font-size: 64px;
+            margin-top: 0px;
+        }
         @include mq(0,375px){
-            margin-top: 60px;
-            text-align: left;
+            margin: 60px 0 20px 0;
             font-size: 60px;
             max-width: 500px;
         }
@@ -28,11 +38,12 @@
         font-family: "Courier new", serif;
         font-size: 18px;
         color: gray;
+        @include mq(0,1024px){
+            font-size: 16px;
+        }
         @include mq(0,375px){
             width: 280px;
-            font-size: 16px;
             text-align: left;
-            margin: 20px 0 40px;
         }
     }
     button {
@@ -50,8 +61,11 @@
             background: $success;
             border-color: $success;
         }
+        @include mq(0,1024px){
+            margin-top: 32px;
+        }
         @include mq(0,375px){
-            margin-top: 60px;
+            margin-top: 20px;
             width: 100%;
         }
     }

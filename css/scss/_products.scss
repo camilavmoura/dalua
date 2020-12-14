@@ -2,7 +2,7 @@
     h2 {
         font-size: 20px;
         font-weight: 600;
-        padding: 20px;
+        padding: 10px;
     }
     h3 {
         font-size: 16px;
@@ -11,7 +11,10 @@
 }
 
 section:nth-of-type(2) {
-    margin-top: 300px;
+    margin-top: 200px;
+    @include mq(0,1024px){
+        margin-top: 160px;
+    }
 }
 
 .products {
@@ -33,6 +36,9 @@ section:nth-of-type(2) {
         img {
             width: 320px;
             background: white;
+            @include mq(0,1024px){
+                width: 260px;
+            }
         }
         [class*="item"] {
             margin: 20px 0;
@@ -47,7 +53,10 @@ section:nth-of-type(2) {
     h1 {
         font-variant: small-caps;
         font-size: 60px;
-        padding: 20px 0;    
+        padding: 20px 0;
+        @include mq(0,1024px){
+            padding-bottom: 10px;
+        }    
     }
     label {
         font-family: "Courier new", serif;

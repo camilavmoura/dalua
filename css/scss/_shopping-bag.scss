@@ -1,17 +1,77 @@
 .shopping-bag {
     max-width: 1400px; 
-    margin: 280px auto 0;
+    margin: 160px auto 0;
     text-align: center;
     h1 {
-        margin: 0 auto;
+        margin: 20px auto;
         font-variant: small-caps;
         font-size: 60px;
     }
+    p {
+        font-family: "courier new", serif;
+        font-size: 18px;
+        color: #777;
+    }
     .shopping-bag-grid {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        grid-template-rows: 60px auto auto;
-        .shopping-bag-grid-containr {
+        text-align: left;
+        max-width: 1200px;
+        width: 90%;
+        min-width: 600px;
+        margin: 44px auto;
+        padding: 0 24px;
+        .shopping-bag-grid-container {
+            .row {
+                display: grid;
+                grid-template-columns: 20% 30% 20% 20% 10%;
+                grid-template-rows: 80px;
+                &:first-of-type {
+                    border-bottom: solid 1px $light-gray;
+                }
+            }
+            label {
+                font-family: "Courier New", serif;
+                font-size: 20px;
+                font-variant: small-caps;
+                color: $dark-gray;
+            }
+            label, p {
+                position: relative;
+                top: 32px;
+            }
+            .quantity::after {
+                content:"";
+                background-image: url(../img/icons/add.png);
+                background-size: 24px 24px;
+                background-repeat: no-repeat;
+                display: block;
+                width: 40px; 
+                height: 40px;
+            }
+            img {
+                border: none;
+                width: 80px;
+                height: 80px;
+            }
+            .description {
+                color: $black;
+                position: relative;
+                top: 22px;
+                font-variant: small-caps;
+                h3 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 4px;
+                }
+                sub {
+                    font-family: "courier new", serif;
+                    font-size: 14px;
+                    color: #777;
+                }
+            }
+            .close {
+                width: 14px;
+                margin-left: 20px;
+            }
         }
     }
 }

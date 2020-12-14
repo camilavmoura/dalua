@@ -12,7 +12,7 @@
     }
     p {
         font-family: "courier new", serif;
-        font-size: 20px;
+        font-size: 18px;
         color: $dark-gray;
         @include mq(0,800px) {
             text-align: left;

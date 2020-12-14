@@ -3,17 +3,25 @@
     z-index: 2;
     background: white;
     position: absolute;
-    top: -140px;
+    top: -100px;
     right: 60px;
     max-width: 460px;
     border: solid 0.5px $light-gray;
-    @include mq(0,1024px) {
-        top: -180px;
+    @include mq(0,800px) {
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        max-width: 100%;
+        left: 0px;
     }
     .basket-container {
         position: relative;
-        margin: 20px;
-        margin-bottom: 0;
+        padding: 20px;
+        padding-bottom: 0;
+        @include mq(0,800px){
+            width: 100%;
+            max-width: 100%;
+        }
         .item-container {
             font-size: 16px;
             border-bottom: solid 0.5px $light-gray;
@@ -79,7 +87,7 @@
         display: inline-block;
         width: 40%;
         font-variant: small-caps;
-        font-size: 22px;
+        font-size: 18px;
         color: white;
         padding: 8px;
         &:hover {
