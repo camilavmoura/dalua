@@ -38,15 +38,6 @@
                 position: relative;
                 top: 32px;
             }
-            .quantity::after {
-                content:"";
-                background-image: url(../img/icons/add.png);
-                background-size: 24px 24px;
-                background-repeat: no-repeat;
-                display: block;
-                width: 40px; 
-                height: 40px;
-            }
             img {
                 border: none;
                 width: 80px;
@@ -67,6 +58,17 @@
                     font-size: 14px;
                     color: #777;
                 }
+            }
+            .quantity {
+                display: inline-block;
+                .add-remove {
+                    transform: translateX(60px) translateY(6px);
+                    width: 20px;              
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }                
             }
             .close {
                 width: 14px;

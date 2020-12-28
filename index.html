@@ -39,7 +39,10 @@
 	<!--Font-->
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&display=swap" rel="stylesheet">
 	<!--Links-->
-	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="./dist/magnific-popup.css">
 </head>
 <!--GA-->
 
@@ -103,6 +106,14 @@
         
         <section class="hero-header">
             
+            <div class="hero-slider">
+
+                <div class="hero-img-1"></div>
+                <div class="hero-img-2"></div>
+                <div class="hero-img-3"></div>
+
+            </div>
+
             <div class="hero-container">
             
                 <h1>reconnect with nature</h1>
@@ -149,7 +160,7 @@
                 
                     <div class="feature-content">
 
-                        <h2>WOMB LOVE</h2>
+                        <h2>womb love</h2>
                         <label>tonifies & cleanses</label>
                     
                     </div>    
@@ -233,53 +244,33 @@
         </section>
         
         <section class="carrossel">
-        
-            <div class="arrows">
-                
-                <a>
-                    <img src="img/icons/left-arrow.png">
-                </a>
-                <a>    
-                    <img src="img/icons/right-arrow.png">
-                </a>
-                    
-            </div>
             
             <div class="carrossel-container">
                 
-                <div class="container-view">
-                
-                    <ul>
-                    
-                        <li>
-                            <img class="1" src="img/products/tincture1.png">
-                        </li>
-                        <li>
-                            <img class="2" src="img/products/blend1.png">
-                        </li>
-                        <li>
-                            <img class="3" src="img/products/tincture4.png">
-                        </li>
-                        <li>
-                            <img class="4" src="img/products/balm2.png">
-                        </li>
-                        <li>
-                            <img class="5" src="img/products/tincture3.png">
-                        </li>
-                        <li>
-                            <img class="6" src="img/products/balm1.png">
-                        </li>
-                        <li>
-                            <img class="5" src="img/products/tincture2.png">
-                        </li>
-                        <li>
-                            <img class="6" src="img/products/oil1.png">
-
-                        </li>                    
-
-                    </ul>
-
-                </div>    
+                    <a href="img/products/tincture1.png" class="carrossel-item">
+                        <img src="img/products/tincture1.png">
+                    </a>
+                    <a href="img/products/blend1.png" class="carrossel-item">
+                        <img src="img/products/blend1.png">
+                    </a>
+                    <a href="img/products/tincture4.png" class="carrossel-item">
+                        <img src="img/products/tincture4.png">
+                    </a>
+                    <a href="img/products/balm2.png" class="carrossel-item">
+                        <img src="img/products/balm2.png">
+                    </a>
+                    <a href="img/products/tincture3.png" class="carrossel-item">
+                        <img src="img/products/tincture3.png">
+                    </a>
+                    <a href="img/products/balm1.png" class="carrossel-item">
+                        <img src="img/products/balm1.png">
+                    </a>
+                    <a href="img/products/tincture2.png" class="carrossel-item">
+                        <img src="img/products/tincture2.png">
+                    </a>
+                    <a href="img/products/oil1.png" class="carrossel-item">
+                        <img src="img/products/oil1.png">
+                    </a>                    
                     
             </div>
         
@@ -291,7 +282,9 @@
             
             <h3>collection</h3>
             <ul>
-                <li>Tinctures</li>
+                <li>
+                    <a href="tinctures.html">Tinctures</a>
+                </li>
                 <li>Oils & Balms</li>
                 <li>Smoking Blends</li>
                 <li>CBD Smoking Blends</li>
@@ -315,11 +308,20 @@
         
             <h3>shop</h3>
             <ul>
-                <li>About us</li>
-                <li>Shipping Methods</li>
-                <li>Contact</li> 
+                <li>
+                    <a>About us</a>
+                </li>
+                <li>
+                    <a>Shipping Methods</a>
+                </li>
+                <li>
+                    <a href="faqs.html">FAQs</a>
+                </li>
+                <li>
+                    <a>Contact</a>
+                </li> 
             </ul>
-        
+    
         </div>        
         
         <div class="col">
@@ -342,6 +344,14 @@
     
     </footer>
     
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./dist/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/carrossel.js"></script>
+    <script type="text/javascript" src="./js/hero.js"></script>
+
 </body>
 
 </html>

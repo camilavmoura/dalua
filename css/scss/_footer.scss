@@ -1,10 +1,10 @@
 footer {
     max-width: 1200px;
-    margin: 80px auto;
+    margin: 80px auto 0;
     padding: 0 40px;
     font-size: 0;
     @include mq(0,1024px) {
-        margin-bottom: 200px;
+        margin-bottom: 100px;
     }
     .col {
         width: 25%;
@@ -25,13 +25,16 @@ footer {
             font-size: 20px;
             font-weight: bold;
             margin-bottom: 10px;
+            color: $dark;
         }
         ul {
             line-height: 36px;
-            color: $darkest-gray;
-            li:hover {
-                color: $success-d3;
-                text-decoration: underline;
+            color: $dark-gray;
+            a {
+                color: $dark-gray;
+                &:hover {
+                    color: $success-d3;
+                }
             }
         }
         p {
@@ -52,9 +55,3 @@ footer {
         }
     }
 }
-
-/*
-
-Não sei porque é que os ícons das redes sociais não aparecem, e estão postos da forma mais correta?
-
-*/

@@ -45,6 +45,9 @@
         padding: 20px 16px;
         font-size: 20px;
     }   
+    [class*="item"] {
+        height: 100%;
+    }
     [class*="1"],[class*="10"],[class*="6"] {
         background: $primary-l1;
     }
@@ -58,6 +61,7 @@
         background: $success-l3;
     }
     .feature-content {
+        padding: 0;
         position: relative;
         top: 50%;
         transform: translateY(-50%);

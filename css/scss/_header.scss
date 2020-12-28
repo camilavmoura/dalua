@@ -30,8 +30,7 @@ header {
         }
         aside {
             width: 80%;
-            font-size: 18px;
-            font-weight: 300;
+            font-size: 16px;
             display: inline-block;
             vertical-align: middle;
             @include mq(0,1024px) {
@@ -50,6 +49,7 @@ header {
                     display: inline-block;
                     vertical-align: middle;
                     transform: translateY(-50%);
+                    margin: 0 auto;
                     padding: 0 3%;
                     @include mq(0,1024px) {
                         position: relative;
@@ -57,12 +57,10 @@ header {
                     }
                 }
                 a {
-                    color: $darkest-gray;
+                    color: $dark-gray;
                 }
                 a:hover {
                     color: green;
-                    font-weight: 600;
-                    font-size: 19px;
                 }
             }
             &.left {
