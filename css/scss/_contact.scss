@@ -1,0 +1,51 @@
+.contact {
+    width: 100vw;
+    background-color: $primary-l2;
+    padding: 20px 0 60px 0;
+    .contact-container {
+        width: 600px;
+        margin: 180px auto 0;
+        font-family: "Courier new", serif;
+        font-size: 16px;
+        .contact-form {
+            width: 400px;
+            margin: 40px auto 0;
+            display: grid;
+            grid-template-columns: auto;
+            font-size: 14px;
+            font-family: lato, sans-serif;
+            color: $black;
+            label {
+                padding-left: 4px;
+            }
+            input {
+                padding: 4px;
+                padding-left: 8px;
+                font-size: 14px;
+                line-height: 24px;
+                margin: 8px 0 20px;
+                color: $darkest-gray;
+                min-height: 24px;
+            }
+            button {
+                border: none;
+                background-color: $success-l4;
+                color: white;
+                padding: 10px 0;
+                font-variant: small-caps;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.validation {
+    display: none;
+    color: $danger;
+    padding-bottom: 14px;
+}
+
+.show-content {
+    display: block;
+}
