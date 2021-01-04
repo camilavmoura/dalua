@@ -2,13 +2,13 @@
     width: 100vw;
     display: block;
     text-align: center;
-    margin-top: 140px;
-    height: 70vh;
+    margin-top: 100px;
+    height: 80vh;
     @include mq(0,1024px){
         margin-top: 100px;
     }
     .hero-container {
-        padding-top: 80px;
+        padding-top: 120px;
         margin: auto;
         display: block;
         width: 80%;
@@ -25,7 +25,7 @@
         position: absolute;
         width: 100vw;
         div {
-            height: 68vh;
+            height: 74vh;
         }
         .hero-img-1, .hero-img-2, .hero-img-3 {
             content: "";

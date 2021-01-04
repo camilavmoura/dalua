@@ -1,105 +1,118 @@
-[class*="grid"] {
-    h2 {
-        font-size: 20px;
-        font-weight: 600;
-        padding: 10px;
-    }
-    h3 {
-        font-size: 16px;
-        color: $darkest-gray;
-    }
-}
-
-.products {
-    color: $black;
-    width: 100vw;
-    text-align: center;
-    margin: 120px auto;
-    display: block;
-    @include mq(0,800px){
-        margin-top: 160px;
-    }
-    [class*="products-grid"] {
-        margin: 40px auto;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        @include mq(0,1320px) {
-            grid-template-columns: auto auto;
+.products-area, .category {
+    background-color: $primary-l4;
+    padding: 40px 0 40px;
+    [class*="grid"] {
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px;
         }
-        @include mq(0,800px) {
-            grid-template-columns: auto;
-        }
-        img {
-            width: 320px;
-            background: white;
-            @include mq(0,1024px){
-                width: 260px;
-            }
-        }
-        [class*="item"] {
-            margin: 20px 0;
-        }     
-    }      
-    .products-grid-2 {
-        grid-template-columns: auto auto auto;        
-    }
-    .products-grid-3 {
-        grid-template-columns: auto auto;           
-    }
-    h1 {
-        font-variant: small-caps;
-        font-size: 60px;
-        padding: 20px 0;
-        @include mq(0,1024px){
-            padding-bottom: 10px;
-        }    
-    }
-    label {
-        font-family: "Courier new", serif;
-        border: none;
-        background: none;
-        font-size: 20px;
-        a {
+        h3 {
+            font-size: 16px;
             color: $darkest-gray;
         }
-        &::after {
-            content:"";
-            background-image: url(../img/icons/right-arrow.png);
-            background-repeat: no-repeat;
-            background-size: 12px 12px;
-            margin: 14px 20px 0px;
-            display: inline-block;
-            width: 12px; 
-            height: 12px;
-        }
     }
 
+    .products {
+        color: $black;
+        width: 100vw;
+        text-align: center;
+        margin: 120px auto;
+        display: block;
+        @include mq(0,800px){
+            margin-top: 160px;
+        }
+        [class*="products-grid"] {
+            background: $primary-l4;
+            margin: 40px auto;
+            justify-content: space-around;
+            display: grid;
+            grid-gap: 100px 0;
+            grid-template-columns: auto auto auto auto;
+            @include mq(0,1320px) {
+                grid-template-columns: auto auto;
+            }
+            @include mq(0,800px) {
+                grid-template-columns: auto;
+            }
+            img {
+                width: 320px;
+                @include mq(0,1024px){
+                    width: 260px;
+                }
+            }
+            [class*="item"] {
+                background: white;
+                padding-bottom: 40px;
+            }
+            .item1, .item2, .item3, .item4 {
+                &:hover {
+                    border: solid 4px $success-l2;
+                }
+            }
+        }      
+        .products-grid-2 {
+            grid-template-columns: auto auto auto;        
+        }
+        .products-grid-3 {
+            grid-template-columns: auto auto;           
+        }
+        h1 {
+            font-variant: small-caps;
+            font-size: 60px;
+            padding: 20px 0;
+            @include mq(0,1024px){
+                padding-bottom: 10px;
+            }    
+        }
+        label {
+            font-family: "Courier new", serif;
+            border: none;
+            background: none;
+            font-size: 20px;
+            a {
+                color: $darkest-gray;
+                &:hover {
+                    color: $success;
+                }
+            }
+            &::after {
+                content:"";
+                background-image: url(../img/icons/right-arrow.png);
+                background-repeat: no-repeat;
+                background-size: 12px 12px;
+                margin: 14px 20px 0px;
+                display: inline-block;
+                width: 12px; 
+                height: 12px;
+            }
+        }
 
-      
-    
-    
-    /*  
+
         
-        pqq não dá isto no label nem no p?
-        ::after {
-            content:"";
-            background-image: url(../img/icons/right-arrow.png);
-            background-repeat: no-repeat;
-            background-size: 28px 28px;
-            margin: 0 auto;
-            display: block;
-            width: 28px; 
-            height: 28px;
-        }
-        ::after {
-            content: url(../img/icons/right-arrow.png);
-            width: 28px;
-            height: 28o
-        }
         
-        */
+        
+        /*  
+            
+            pqq não dá isto no label nem no p?
+            ::after {
+                content:"";
+                background-image: url(../img/icons/right-arrow.png);
+                background-repeat: no-repeat;
+                background-size: 28px 28px;
+                margin: 0 auto;
+                display: block;
+                width: 28px; 
+                height: 28px;
+            }
+            ::after {
+                content: url(../img/icons/right-arrow.png);
+                width: 28px;
+                height: 28o
+            }
+            
+            */
+    }
 }
-
-
 
 

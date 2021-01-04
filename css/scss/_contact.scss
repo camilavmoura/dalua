@@ -3,10 +3,14 @@
     background-color: $primary-l2;
     padding: 20px 0 60px 0;
     .contact-container {
+        max-width: 80vw;
         width: 600px;
         margin: 180px auto 0;
         font-family: "Courier new", serif;
         font-size: 16px;
+        p {
+            line-height: 32px;
+        }
         .contact-form {
             width: 400px;
             margin: 40px auto 0;
